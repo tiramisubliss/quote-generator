@@ -1,7 +1,6 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :update, :destroy]
 
-  # GET /quotes
   def index
     #@quotes = Quote.all
     @random_quote = Quote.order("RANDOM()").first
