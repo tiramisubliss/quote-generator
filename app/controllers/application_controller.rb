@@ -4,7 +4,7 @@ class ApplicationController < ActionController::API
 
 rescue_from ActionController::RoutingError do |exception|
 	logger.error 'Routing error occurred'
- 	render json: {'error' => '404 Not found','message' => 'please go to /quotes'} 
+ 	render json: {'error' => '404 Not found','message' => 'please go to root of the site'} 
 end
 
 end
